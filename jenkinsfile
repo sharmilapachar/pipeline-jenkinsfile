@@ -4,16 +4,19 @@ stages{
 stage("Build"){
 steps{
 echo "build success"
+bat "mvn build"
 }
 }
 stage("Test"){
 steps{
 echo "test success"
+bat "mvn test"
 }
 }
 stage("Deploy"){
 steps{
 echo "deploy success"
+
 }
 }
 }
